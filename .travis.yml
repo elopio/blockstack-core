@@ -3,5 +3,8 @@ dist: trusty
 
 language: bash
 
+install:
+  - sudo apt-get --yes install snapd
+
 script:
   - if [ "$TRAVIS_EVENT_TYPE" == "cron" ]; then ./sync_and_push.sh; fi
