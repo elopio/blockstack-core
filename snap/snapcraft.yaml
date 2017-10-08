@@ -1,5 +1,5 @@
 name: blockstack
-version: 'develop'
+version: 'v0.17.0.1'
 summary: A server that handles the core functionality of Blockstack
 description: |
   Blockstack is a new decentralized web, where users own their data and apps
@@ -25,7 +25,7 @@ apps:
 parts:
   core:
     source: .
-    source-tag: 'develop'
+    source-tag: 'v0.17.0.1'
     plugin: python
     python-version: python2
     build-packages: [libffi-dev, libssl-dev, rng-tools, libgmp3-dev]
